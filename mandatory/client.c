@@ -6,7 +6,7 @@
 /*   By: yeonhkim <yeonhkim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/04 16:07:13 by yeonhkim          #+#    #+#             */
-/*   Updated: 2022/12/06 23:50:14 by yeonhkim         ###   ########.fr       */
+/*   Updated: 2022/12/06 23:52:55 by yeonhkim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ static void	send_byte(int byte)
 static void	handler(int sig, siginfo_t *s_info, void *context)
 {
 	static volatile sig_atomic_t	catching;
-	
+
 	(void)context;
 	if (s_info->si_pid != g_server.pid)
 		return ;

@@ -1,5 +1,7 @@
 # minitalk
 
+![screenshot](/screenshot.png)
+
 `minitalk` is a personal implementation of a simple client-server communication program using UNIX signals. The server listens for signals sent from a client process and reconstructs messages transmitted bit-by-bit through these signals.
 
 ## Project Purpose
